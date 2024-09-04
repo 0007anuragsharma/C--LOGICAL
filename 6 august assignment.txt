@@ -1,0 +1,386 @@
+// assignment 6 aug. 2024
+
+1) weekdays
+
+#include<stdio.h>
+int main(){
+    int week;
+    printf("enter the week 1 to 7 ");
+    scanf("%d",& week);
+    if(week==1){
+        printf("Monday");
+    }
+    else if(week==2){
+        printf("Tuesday");
+    }
+    else if(week==3){
+        printf("Wenesday");
+    }
+    else if(week==4){
+        printf("Thuresday");
+    }
+    else if(week==5){
+        printf("Friday");
+    }
+    else if(week==6){
+        printf("Saturday");
+    }
+    else if(week==7){
+        printf("sunday");
+    }
+    else{
+        printf("not valid");
+    }
+    return 0;
+}
+
+2) Months
+
+#include<stdio.h>
+int main(){
+    int months;
+    printf("enter the months 1 to 12 ");
+    scanf("%d",& months);
+    if(months==1){
+        printf("januray");
+    }
+    else if(months==2){
+        printf("februry");
+    }
+    else if(months==3){
+        printf("march");
+    }
+    else if(months==4){
+        printf("april");
+    }
+    else if(months==5){
+        printf("may");
+    }
+    else if(months==6){
+        printf("june");
+    }
+    else if(months==7){
+        printf("july");
+    }
+    else if(months==8){
+        printf("august");
+    }
+    else if(months==9){
+        printf("september");
+    }
+    else if(months==10){
+        printf("october");
+    }
+    else if(months==11){
+        printf("november");
+    }
+    else if(months==12){
+        printf("december");
+    }
+    else{
+        printf("not valid");
+    }
+    
+    return 0;
+}
+
+
+3) seasons
+
+#include<stdio.h>
+int main(){
+    int season;
+    printf("enter the value ");
+    scanf("%d",&season);
+    if(season==1){
+        printf("spring");
+    }
+    else if(season==2){
+        printf("summer");
+    }
+    else if(season==3){
+        printf("monsoon");
+    }
+    else if(season==4){
+        printf("autum");
+    }
+    else if(season==5){
+        printf("winter");
+    }
+    else{
+        printf("input invalid");
+    }
+    return 0;
+}
+
+4) upper line, middle line, lower line
+
+#include<stdio.h>
+int main(){
+    char a;
+    printf("enter the charator ");
+    scanf("%c",&a);
+    if(a=='q' ||a=='w' ||a=='e' ||a=='r' ||a=='t' ||a=='y'||a=='u'||a=='i'||a=='o'||a=='o'||a=='p'){
+        printf("upper line");
+    }
+    else if(a=='a'||a=='s'||a=='d'||a=='f'||a=='g'||a=='h'||a=='j'||a=='k'||a=='l'){
+        printf("mid line");
+    }
+    else if(a=='z'||a=='x'||a=='c'||a=='v'||a=='b'||a=='n'||a=='m'){
+        printf("lower line");
+    }
+    else{
+        printf("input is not valid");
+    }
+    return 0;
+}
+
+
+5) 
+
+#include<stdio.h>
+int main(){
+    char w;
+    printf("enter the alphabet ");
+    scanf("%c",&w);
+    if(w=='a'){
+        printf("apple");
+    }
+    else if(w=='b'){
+        printf("ball");
+    }
+    else if(w=='c'){
+        printf("cat");
+    }
+    else if(w=='d'){
+        printf("dog");
+    }
+    else{
+        printf("input is not valid");
+    }
+    return 0;
+}
+
+
+6)
+
+ #include<stdio.h>
+ int main(){
+     int a;
+     printf("enter the value ");
+     scanf("%d",&a);
+     if(a%2==0 && a%3==0){
+         printf("divisible by both");
+     }
+    else if(a%6==0 || a%9==0){
+        printf("divisible");
+    }
+    else if(a%5==0 && a%4==0){
+        printf("divisible");
+    }
+    else if(a%3==0 || a%8==0){
+        printf("divisible");
+    }
+    else{
+        printf("input is not valid");
+    }
+    return 0;
+    
+     
+ }
+
+7)
+
+#include<stdio.h>
+int main(){
+    int a;
+    printf("enter the value ");
+    scanf("%d",&a);
+    if(a>1 && a<10){
+        printf("this nunmber is between 1 to 10");
+    }
+    else if(a>11 && a<20){
+        printf("this nunmber is between 11 to 20");
+    }
+    else if(a>34 && a<89){
+        printf("this nunmber is between 34 to 89");
+    }
+    else{
+        printf("input is not valid");
+    }
+    return 0;
+}
+
+8) Student Marks  fail/pass
+
+
+#include<stdio.h>
+int main(){
+    int english,hindi,math,science,gk;
+    printf("enter the subject ");
+    scanf("%d %d %d %d %d",&english,&hindi,&math,&science,&gk);
+    if(english>36 && hindi>36 && math>36 && science>36 && gk>36){
+        printf("pass");
+    }
+    else{
+        printf("fail");
+    }
+    return 0;
+    }
+
+9) 
+
+#include<stdio.h>
+int main(){
+    int maths,science,english,hindi,gk,total,avg;
+    printf("enter the marks");
+    scanf("%d %d %d %d %d",& maths,& science,& english,& hindi,& gk);
+    if(maths>40 && english>40 && science>40 && hindi>40 && gk>40){
+        total= maths+science+english+hindi+gk;
+        printf("Total marks is: %d\n",total);
+        avg=total/ 5;
+        printf("avg marks is:%d",avg);
+    }
+    else{
+        printf("fail");
+    }
+    return 0;
+}
+
+10)
+
+#include<stdio.h>
+int main(){
+    int english,hindi,computer,science,math,total;
+    float percentage;
+    printf("enter the marks ");
+    scanf("%d %d %d %d %d",&english,&hindi,&computer,&science,&math);
+    total = english+hindi+computer+science+math;
+    printf("total marks %d\n",total);
+    percentage = (total/500)*100;
+    printf("total percentage %f\n", percentage);
+    if(percentage>80){
+        printf("A");
+    }
+    else if(percentage>60){
+        printf("B");
+    }
+    else if(percentage>50){
+        printf("C");
+    }
+    else if(percentage>45){
+        printf("D");
+    }
+    else if(percentage>25){
+        printf("E");
+    }
+    else if(percentage<25){
+        printf("Fail");
+    }
+    return 0;
+    }
+
+11)
+
+#include<stdio.h>
+int main(){
+    int holiday,netsalary,salary=40000;
+    printf("name:Anurag Sharma\n");
+    printf("address:jaipur\n");
+    printf("bank details=123456789\n");
+    printf("salary:40000\n");
+    printf("enter no of holiday taken=");
+    scanf("%d",&holiday);
+    if(holiday=1){
+        printf("allot:40000\n");
+        printf("holiday:1");
+    }
+    else if(holiday>=2 && holiday<=5){
+        netsalary = salary-(salary*5/100);
+        printf("allot: %d",netsalary);
+    }
+    else if(holiday>=6 && holiday<=14){
+    netsalary=salary-(salary*10/100);
+    printf("allot: %d",netsalary);
+    }
+    else if(holiday==15){
+   
+       netsalary=salary-(salary*50/100);
+       printf("allot:  %d",netsalary);
+   }
+    else {
+             printf("no salary");
+    }
+    
+    return 0;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

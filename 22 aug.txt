@@ -1,0 +1,306 @@
+1)
+
+#include<stdio.h>
+void input();
+int main(){
+     input();
+    
+    return 0;
+}
+void input(){
+    printf("Hello world");
+}
+
+2)
+
+#include<stdio.h>
+void input();
+int main(){
+     input();
+    
+    return 0;
+}
+void input(){
+    int a,b,c;
+    printf("enter the value\n");
+    scanf("%d %d",&a,&b);
+    c=a+b;
+    printf("%d",c);
+    
+}
+
+3)
+
+#include<stdio.h>
+void input();
+int main(){
+     input();
+    
+    return 0;
+}
+void input(){
+    int a,b,c;
+    printf("enter the value\n");
+    scanf("%d %d",&a,&b);
+    c=a-b;
+    printf("%d",c);
+    
+}
+
+4)
+
+#include<stdio.h>
+void input();
+int main(){
+     input();
+    
+    return 0;
+}
+void input(){
+    int a,b,c;
+    printf("enter the value\n");
+    scanf("%d %d",&a,&b);
+    c=a*b;
+    printf("%d",c);
+    
+}
+
+5)
+
+#include<stdio.h>
+void input();
+int main(){
+     input();
+    
+    return 0;
+}
+void input(){
+    int a,b,c;
+    printf("enter the value\n");
+    scanf("%d %d",&a,&b);
+    c=a/b;
+    printf("%d",c);
+    
+}
+
+6) swap no without third value
+
+#include<stdio.h>
+void input();
+int main(){
+     input();
+    
+    return 0;
+}
+void input(){
+    int a = 10;
+    int b = 20;
+    printf("enter the value of a %d\n",a);
+    printf("enter the value of b %d\n",b);
+    a = a + b;
+    b = a - b;
+    a = a - b;
+    printf("the swap value of a is %d\n",a);
+    printf("the swap value of b is %d\n ",b);
+    
+}
+
+7) swap no with third value
+
+#include<stdio.h>
+void input();
+int main(){
+     input();
+    
+    return 0;
+}
+void input(){
+    int a = 10;
+    int b = 20;
+    int c ;
+    printf("enter the value of a %d\n",a);
+    printf("enter the value of b %d\n",b);
+    c = a;
+    a = b;
+    b = c;
+    printf("the swap value of a is %d\n",a);
+    printf("the swap value of b is %d\n ",b);
+    
+}
+
+8)
+
+
+#include<stdio.h>
+void armstong();
+void palindrome();
+void even ();
+void reverse ();
+void count ();
+void sum();
+int main(){
+    char num;
+    printf("enter any single character ");
+    scanf("%c",&num);
+    if(num == 'a'){
+        armstong();
+    }
+   else if(num == 'p'){
+        palindrome();
+   }
+   else if(num == 'e'){
+        even();
+    }
+    else if (num == 'r'){
+        reverse();
+    }
+    else if(num == 'c'){
+        count();
+    }
+    else if(num == 's'){
+        sum();
+    }
+    
+    
+    return 0;
+}
+
+void armstong(){
+    int num ;
+    printf("enter your number\n");
+    scanf("%d",&num);
+    int temp = num;
+    int rem,sum=0;
+    while(num>0){
+        rem=num%10;
+        sum=sum+rem*rem*rem;
+        num=num/10;
+    }
+    if(temp==sum){
+        printf("armstong number ");
+        scanf("%d",&num);
+    }
+    else{
+        printf("not");
+    }
+}
+
+void palindrome(){
+    int n;
+    printf("enter your number\n");
+    scanf("%d",&n);
+    int temp=n;
+    int rem,sum=0;
+    while(n>0){
+        rem=n%10;
+        sum=sum*10+rem;
+        n=n/10;
+    }
+    if(temp==sum){
+        printf("number is palindrome ");
+        scanf("%d",&n);
+    }
+    else{
+        printf("number is not palindrome");
+    }
+}
+
+void even(){
+    int num;
+        printf("enter any number");
+        scanf("%d",&num);
+        if(num%2==0){
+            printf("this number is even");
+        }
+        else {
+            printf("number is odd");
+        }
+    }
+    
+    void reverse(){
+        int n=492;
+        int rem,sum=0;
+        while(n>0){
+            rem=n%10;
+            sum=sum%10+rem;
+            n=n/10;
+        }
+        printf("%d",sum);
+    }
+void count(){
+    int num=123456;
+    int count=0;
+    while(num>0){
+        num=num/10;
+        count++;
+    }
+    printf("%d",count);
+    scanf("%d",&num);
+}
+void sum(){
+    int a=1;
+    int sum=0;
+    while(a<=20){
+        sum=sum+a;
+        a++;
+    }
+    printf("%d",sum);
+}
+
+
+9)Write a C program to check whether a number is negative, positive or zero.
+
+#include<stdio.h>
+void number();
+int main(){
+    number();
+    
+    return 0;
+}
+void number(){
+    int x;
+    printf("enter number ");
+    scanf("%d",&x);
+    if(x==0){
+        printf("numer is zero");
+    }
+    else if(x<=0){
+        printf("number is negative");
+    }
+    else if(x>=0){
+        printf("number is positive");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
